@@ -13,6 +13,7 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 # Install Regolith and Polybar
 sudo add-apt-repository ppa:regolith-linux/stable -y
 sudo apt install regolith-desktop-standard polybar -y
+sudo apt install regolith-compositor-picom-glx -y
 
 # Build and install Alacritty
 git clone https://github.com/alacritty/alacritty.git
