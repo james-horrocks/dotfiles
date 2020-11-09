@@ -1,0 +1,4 @@
+function rmalias {
+        sed -i "/^alias $1=/d" ~/.oh-my-zsh/custom/aliases.zsh
+        unalias $1
+}

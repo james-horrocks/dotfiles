@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 708ea42384d378343a590fc34a3dee536a1651df James <james@james-xps.(none)> 1599495850 +0100	clone: from https://github.com/ohmyzsh/ohmyzsh.git
+708ea42384d378343a590fc34a3dee536a1651df 38f276a732238008a8d0e4a028a4f112bca56221 James <james@james-xps.(none)> 1600560129 +0100	pull --rebase --stat origin master: checkout 38f276a732238008a8d0e4a028a4f112bca56221
+38f276a732238008a8d0e4a028a4f112bca56221 38f276a732238008a8d0e4a028a4f112bca56221 James <james@james-xps.(none)> 1600560129 +0100	rebase finished: refs/heads/master onto 38f276a732238008a8d0e4a028a4f112bca56221
+38f276a732238008a8d0e4a028a4f112bca56221 1617f4ffafd6114fb3ccbdbb782eeaf25a7f2905 James <james@james-xps.(none)> 1601684702 +0100	pull --rebase --stat origin master: checkout 1617f4ffafd6114fb3ccbdbb782eeaf25a7f2905
+1617f4ffafd6114fb3ccbdbb782eeaf25a7f2905 1617f4ffafd6114fb3ccbdbb782eeaf25a7f2905 James <james@james-xps.(none)> 1601684702 +0100	rebase finished: refs/heads/master onto 1617f4ffafd6114fb3ccbdbb782eeaf25a7f2905
+1617f4ffafd6114fb3ccbdbb782eeaf25a7f2905 5b717ab3e4bfb627a936d7c04367a39867734d63 James <james@james-xps.(none)> 1602885307 +0100	pull --rebase --stat origin master: checkout 5b717ab3e4bfb627a936d7c04367a39867734d63
+5b717ab3e4bfb627a936d7c04367a39867734d63 5b717ab3e4bfb627a936d7c04367a39867734d63 James <james@james-xps.(none)> 1602885307 +0100	rebase finished: refs/heads/master onto 5b717ab3e4bfb627a936d7c04367a39867734d63
+5b717ab3e4bfb627a936d7c04367a39867734d63 39c79493feb71da4ba3b69eb82229804b27209cc James <james@james-xps.(none)> 1604004099 +0000	pull --rebase --stat origin master: checkout 39c79493feb71da4ba3b69eb82229804b27209cc
+39c79493feb71da4ba3b69eb82229804b27209cc 39c79493feb71da4ba3b69eb82229804b27209cc James <james@james-xps.(none)> 1604004099 +0000	rebase finished: refs/heads/master onto 39c79493feb71da4ba3b69eb82229804b27209cc

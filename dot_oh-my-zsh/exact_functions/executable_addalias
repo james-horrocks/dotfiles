@@ -1,0 +1,10 @@
+function addalias {
+	whitespace="[[:space:]]"
+	i=$2
+    	if [[ $2 =~ $whitespace ]]
+    	then
+        	i=\"$2\"
+    	fi
+        echo "alias $1=$i" >> ~/.oh-my-zsh/custom/aliases.zsh
+        source ~/.oh-my-zsh/custom/aliases.zsh
+}

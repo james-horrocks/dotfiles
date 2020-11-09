@@ -1,0 +1,13 @@
+[bandwidth]
+command=$SCRIPT_DIR/bandwidth2/bandwidth2
+interval=persist
+markup=pango
+LABEL=
+#INTERFACE=(checks all interfaces)
+#USE_BITS=0
+#USE_BYTES=1
+#WARN_RX=0
+#WARN_TX=0
+#CRIT_RX=0
+#CRIT_TX=0
+#USE_SI=0
