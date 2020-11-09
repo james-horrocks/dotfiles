@@ -117,7 +117,7 @@ export PATH="$SPICETIFY_INSTALL:$PATH"
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nano'
 else
-  export EDITOR='nano'
+  export EDITOR='code'
 fi
 
 # Compilation flags
