@@ -1,4 +1,0 @@
-[ssid]
-command=$SCRIPT_DIR/ssid/ssid
-INTERFACE=wlp0s20f3
-interval=60
