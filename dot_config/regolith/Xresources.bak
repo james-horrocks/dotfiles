@@ -1,7 +1,0 @@
-xft.dpi: 192
-
-i3-wm.bar.position: top
-i3-wm.bar.font: pango:MesloLGS NF 13, Source Code Pro Medium 13, Material Design Icons 13
-
-gnome.icon.theme: Yaru
-gnome.wallpaper: ~/Pictures/abstract-colorful-5k-wallpaper-5120x3200_577747-mm-90.jpg
