@@ -1,9 +1,0 @@
-# pack-refs with: peeled fully-peeled sorted 
-a7496f23206c75fee194145407e695d1f00bfd1a refs/remotes/origin/continous_frecency
-f083feb1dae2038c8ff4f0ad50a1775b29dd2413 refs/remotes/origin/current-completion
-0d1f65a3c3b40740293b9039205d028ba1603d94 refs/remotes/origin/develop
-66bf2b40ff4a556f9c3d0a87af2c214104bce165 refs/remotes/origin/integer
-193355bf49a04941a0990e4654df27d83cef6785 refs/remotes/origin/keep-dirs
-ae71aabec5472095b01d25b4c341adb349c277f4 refs/remotes/origin/master
-ce47ed02faaec30ef2d584498f496f1c7b0b9e72 refs/remotes/origin/no-subdirectories
-bd10c5b9982ea90de3b869e6c789ba13013669ca refs/remotes/origin/zsh-files

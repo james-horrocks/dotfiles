@@ -8,6 +8,11 @@ sudo apt update && sudo apt install fonts-font-awesome fonts-materialdesignicons
 wget https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark -O ~/.dircolors
 sudo apt install git zsh -y
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
+sudo git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
+sudo git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+mkdir ~/.oh-my-zsh/functions
 #sudo chsh -s $(which zsh)
 
 # Install Regolith and Polybar
@@ -52,6 +57,7 @@ cd
 
 # Install Spicetify
 curl -fsSL https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.sh | sh
+spicetify
 echo -e "Once Spotify has been installed (not the snap\!) please run the following:
 \tsudo chmod a+wr /usr/share/spotify
 \tsudo chmod a+wr /usr/share/spotify/Apps -R
