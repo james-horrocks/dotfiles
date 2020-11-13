@@ -18,9 +18,13 @@ mkdir ~/.oh-my-zsh/functions
 # Install LightDM
 sudo apt install lightdm -y
 sudo dpkg-reconfigure lightdm -f noninteractive
+grep -qF '[SeatDefaults]' /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf \
+    && grep -qF 'random' /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf \
+    || sudo sh -c "echo '\n[SeatDefaults]\nuser-session=regolith' >> /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf"
 
 # Install Regolith and Polybar
 sudo add-apt-repository ppa:regolith-linux/stable -y
+sudo apt update
 sudo apt install regolith-desktop-minimal polybar -y
 sudo apt install regolith-compositor-picom-glx -y
 
