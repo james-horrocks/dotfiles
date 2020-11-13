@@ -16,7 +16,7 @@ mkdir ~/.oh-my-zsh/functions
 #sudo chsh -s $(which zsh)
 
 # Install LightDM
-sudo apt remove gdm3 -y
+sudo apt purge gdm3 -y
 sudo apt install lightdm -y
 sudo dpkg-reconfigure lightdm -f noninteractive
 grep -qF '[SeatDefaults]' /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf \
