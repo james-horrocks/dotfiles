@@ -88,15 +88,15 @@ plugins=(
 	zsh-completions
 	zsh-autosuggestions
 	zsh-z
+	sudo
 	git
-	vscode
-	scala
 	python
 	pip
 	virtualenv
 	pyenv
 	aws
 	docker
+	docker-compose
 	terraform
 )
 autoload -U compinit && compinit
