@@ -38,10 +38,10 @@ sudo apt install -y \
 git clone https://github.com/alacritty/alacritty.git
 cd alacritty
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-rustup override set stable
-rustup update stable
+~/.cargo/bin/rustup override set stable
+~/.cargo/bin/rustup update stable
 sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3 gzip -y
-cargo build --release
+~/.cargo/bin/cargo build --release
 sudo tic -xe alacritty,alacritty-direct extra/alacritty.info
 sudo cp target/release/alacritty /usr/local/bin # or anywhere else in $PATH
 sudo cp extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg
