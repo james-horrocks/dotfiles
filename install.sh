@@ -62,7 +62,7 @@ sudo ninja -C build install
 cd
 
 # Build and install cli-visualizer
-sudo apt install fftw ncursesw libfftw3-dev libncursesw5-dev cmake libpulse-dev -y
+sudo apt install libfftw3-dev libncursesw5-dev cmake libpulse-dev -y
 git clone https://github.com/dpayne/cli-visualizer
 cd cli-visualizer
 ./install.sh
