@@ -7,7 +7,7 @@ sudo apt update && sudo apt install fonts-font-awesome fonts-materialdesignicons
 # Install ZSH and Oh My ZSH
 wget https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark -O ~/.dircolors
 sudo apt install git zsh -y
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+sh -c "$(wget -qO- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 sudo git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
 sudo git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
@@ -15,15 +15,19 @@ sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/
 mkdir ~/.oh-my-zsh/functions
 #sudo chsh -s $(which zsh)
 
+# Install LightDM
+sudo apt install lightdm -y
+sudo dpkg-reconfigure lightdm -f noninteractive
+
 # Install Regolith and Polybar
 sudo add-apt-repository ppa:regolith-linux/stable -y
-sudo apt install regolith-desktop-standard polybar -y
+sudo apt install regolith-desktop-minimal polybar -y
 sudo apt install regolith-compositor-picom-glx -y
 
 # Build and install Alacritty
 git clone https://github.com/alacritty/alacritty.git
 cd alacritty
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 rustup override set stable
 rustup update stable
 sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3 gzip -y
@@ -65,4 +69,4 @@ Visit https://github.com/khanhas/spicetify-cli/wiki/Basic-Usage for usage instru
 
 # Install chezmoi for dotfile management and apply dotfiles
 curl -sfL https://git.io/chezmoi | sh
-chezmoi init --apply https://github.com/james-horrocks/dotfiles
+~/bin/chezmoi init --apply https://github.com/james-horrocks/dotfiles
