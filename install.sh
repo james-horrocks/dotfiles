@@ -2,7 +2,7 @@
 
 cd
 
-sudo apt update && sudo apt install fonts-font-awesome fonts-materialdesignicons-webfont fonts-source-code-pro-ttf -y
+sudo apt update
 
 # Install ZSH and Oh My ZSH
 wget https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark -O ~/.dircolors
@@ -16,6 +16,7 @@ mkdir ~/.oh-my-zsh/functions
 #sudo chsh -s $(which zsh)
 
 # Install LightDM
+sudo apt remove gdm3 -y
 sudo apt install lightdm -y
 sudo dpkg-reconfigure lightdm -f noninteractive
 grep -qF '[SeatDefaults]' /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf \
@@ -25,8 +26,13 @@ grep -qF '[SeatDefaults]' /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greet
 # Install Regolith and Polybar
 sudo add-apt-repository ppa:regolith-linux/stable -y
 sudo apt update
-sudo apt install regolith-desktop-minimal polybar -y
-sudo apt install regolith-compositor-picom-glx -y
+sudo apt install -y \
+    regolith-desktop-minimal \
+    regolith-compositor-picom-glx \
+    polybar \
+    fonts-font-awesome \
+    fonts-materialdesignicons-webfont \
+    fonts-source-code-pro-ttf
 
 # Build and install Alacritty
 git clone https://github.com/alacritty/alacritty.git
