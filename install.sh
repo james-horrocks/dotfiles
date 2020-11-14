@@ -50,7 +50,7 @@ gzip -c extra/alacritty.man | sudo tee /usr/local/share/man/man1/alacritty.1.gz 
 cd
 
 # Build and install GLava
-sudo apt install libgl1-mesa-dev libpulse0 libpulse-dev libxext6 libxext-dev libxrender-dev libxcomposite-dev liblua5.3-dev liblua5.3 lua-lgi lua-filesystem libobs0 libobs-dev meson build-essential gcc -y
+sudo apt install libgl1-mesa-dev libpulse0 libpulse-dev libxext6 libxext-dev libxrender-dev libxcomposite-dev liblua5.3-dev liblua5.3-0 lua-lgi lua-filesystem libobs0 libobs-dev meson build-essential gcc -y
 sudo ldconfig
 git clone https://github.com/jarcode-foss/glava
 cd glava
