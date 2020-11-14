@@ -64,7 +64,6 @@ sudo apt install libfftw3-dev libncursesw5-dev cmake libpulse-dev -y
 git clone https://github.com/dpayne/cli-visualizer
 cd cli-visualizer
 ./install.sh
-make ENABLE_PULSE=1
 cd
 
 # Install Spicetify
