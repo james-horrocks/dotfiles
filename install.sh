@@ -25,7 +25,8 @@ sudo apt install -y \
     polybar \
     fonts-font-awesome \
     fonts-materialdesignicons-webfont \
-    fonts-source-code-pro-ttf
+    fonts-source-code-pro-ttf \
+    gdm3-
 sudo dpkg-reconfigure lightdm -f noninteractive
 grep -qF '[SeatDefaults]' /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf \
     && grep -qF 'random' /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf \
@@ -77,3 +78,6 @@ Visit https://github.com/khanhas/spicetify-cli/wiki/Basic-Usage for usage instru
 # Install chezmoi for dotfile management and apply dotfiles
 curl -sfL https://git.io/chezmoi | sh
 ~/bin/chezmoi init --apply https://github.com/james-horrocks/dotfiles
+
+sudo apt update && sudo apt upgrade -y
+sudo apt autoremove -y
