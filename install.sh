@@ -15,24 +15,21 @@ sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/
 mkdir ~/.oh-my-zsh/functions
 #sudo chsh -s $(which zsh)
 
-# Install LightDM
-sudo apt purge gdm3 -y
-sudo apt install lightdm -y
-sudo dpkg-reconfigure lightdm -f noninteractive
-grep -qF '[SeatDefaults]' /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf \
-    && grep -qF 'random' /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf \
-    || sudo sh -c "echo '\n[SeatDefaults]\nuser-session=regolith' >> /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf"
-
-# Install Regolith and Polybar
+# Install Regolith, LightDM and Polybar
 sudo add-apt-repository ppa:regolith-linux/stable -y
 sudo apt update
 sudo apt install -y \
     regolith-desktop-minimal \
     regolith-compositor-picom-glx \
+    lightdm \
     polybar \
     fonts-font-awesome \
     fonts-materialdesignicons-webfont \
     fonts-source-code-pro-ttf
+sudo dpkg-reconfigure lightdm -f noninteractive
+grep -qF '[SeatDefaults]' /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf \
+    && grep -qF 'random' /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf \
+    || sudo sh -c "echo '\n[SeatDefaults]\nuser-session=regolith' >> /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf"
 
 # Build and install Alacritty
 git clone https://github.com/alacritty/alacritty.git
