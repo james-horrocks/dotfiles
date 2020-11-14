@@ -8,10 +8,6 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 monitors=$(xrandr | grep -w connected | tr -d " ")
 
-for m in $monitors; do
-    echo $m
-done
-
 # Launch Polybar, using default config location ~/.config/polybar/config
 for m in $monitors; do
     monitor=$(echo $m | sed -r "s/(connected)/ /g" | cut -d" " -f1)
