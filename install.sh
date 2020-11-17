@@ -6,7 +6,7 @@ sudo apt update
 
 # Install ZSH and Oh My ZSH
 wget https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark -O ~/.dircolors
-sudo apt install git zsh -y
+sudo apt install git zsh curl -y
 sh -c "$(wget -qO- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 sudo git clone https://github.com/agkozak/zsh-z ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-z
@@ -80,3 +80,4 @@ curl -sfL https://git.io/chezmoi | sh
 
 sudo apt update && sudo apt upgrade -y
 sudo apt autoremove -y
+sudo chsh -s $(which zsh)
