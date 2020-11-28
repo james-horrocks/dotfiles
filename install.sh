@@ -22,10 +22,12 @@ sudo apt install -y \
     regolith-desktop-minimal \
     regolith-compositor-picom-glx \
     lightdm \
+    slick-greeter \
     polybar \
     fonts-font-awesome \
     fonts-materialdesignicons-webfont \
     fonts-source-code-pro-ttf \
+    lightdm-gtk-greeter- \
     gdm3-
 sudo dpkg-reconfigure lightdm -f noninteractive
 grep -qF '[SeatDefaults]' /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf \
