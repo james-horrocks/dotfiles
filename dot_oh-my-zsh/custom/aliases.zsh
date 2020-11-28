@@ -10,3 +10,4 @@ alias azkaban2="ssh -t dev-jhorrocks ssh -t admin@release-001.admin.uk build-bui
 alias azkaban-web="ssh -t dev-jhorrocks ssh -t admin@release-001.admin.uk build-build-azkaban-web-001.data-warehouse.uk"
 alias chezs="chezmoi git status"
 alias chezc="chezmoi git add . && chezmoi git -- commit -m"
+alias chezp="chezmoi git push"
