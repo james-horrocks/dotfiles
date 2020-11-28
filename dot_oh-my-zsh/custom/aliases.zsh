@@ -8,3 +8,5 @@ alias azkaban="ssh -t dev-jhorrocks ssh -t admin@release-001.admin.uk build-buil
 alias azkaban2="ssh -t dev-jhorrocks ssh -t admin@release-001.admin.uk build-build-azkaban-001.data-warehouse.uk"alias homeserver="ssh james@homeserver"
 alias azkaban2="ssh -t dev-jhorrocks ssh -t admin@release-001.admin.uk build-build-azkaban-001.data-warehouse.uk"
 alias azkaban-web="ssh -t dev-jhorrocks ssh -t admin@release-001.admin.uk build-build-azkaban-web-001.data-warehouse.uk"
+alias chezs="chezmoi git status"
+alias chezc="chezmoi git add . && chezmoi git -- commit -m"

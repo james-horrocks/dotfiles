@@ -1,4 +1,5 @@
 function rmalias {
-        sed -i "/^alias $1=/d" ~/.oh-my-zsh/custom/aliases.zsh
+        sed -i "/^alias $1=/d" ~/.local/share/chezmoi/dot_oh-my-zsh/custom/aliases.zsh
+        chezmoi apply ~/.oh-my-zsh/custom/aliases.zsh
         unalias $1
 }

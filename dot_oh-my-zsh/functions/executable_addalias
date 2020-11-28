@@ -5,6 +5,7 @@ function addalias {
     	then
         	i=\"$2\"
     	fi
-        echo "alias $1=$i" >> ~/.oh-my-zsh/custom/aliases.zsh
+        echo "alias $1=$i" >> ~/.local/share/chezmoi/dot_oh-my-zsh/custom/aliases.zsh
+		chezmoi apply ~/.oh-my-zsh/custom/aliases.zsh
         source ~/.oh-my-zsh/custom/aliases.zsh
 }
