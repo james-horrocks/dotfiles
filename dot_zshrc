@@ -84,6 +84,7 @@ ZSH_DISABLE_COMPFIX=true
 plugins=(
 	zsh_reload
 	ubuntu
+	archlinux
 	common-aliases
 	zsh-completions
 	zsh-autosuggestions
