@@ -665,4 +665,6 @@ exec --no-startup-id $i3-wm.program.3
 
 # Launch Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+# Restore background
+exec_always --no-startup-id grep -wq ID=manjaro /etc/os-release && nitrogen --restore &
 #exec --no-startup-id glava --desktop

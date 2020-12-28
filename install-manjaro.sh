@@ -56,3 +56,6 @@ Visit https://github.com/khanhas/spicetify-cli/wiki/Basic-Usage for usage instru
 
 # Install chezmoi for dotfile management and apply dotfiles
 sudo pacman -Syu --noconfirm chezmoi && chezmoi init --apply https://github.com/james-horrocks/dotfiles
+
+# Set background directory
+nitrogen ~/Pictures/backgrounds
