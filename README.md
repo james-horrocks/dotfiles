@@ -12,6 +12,7 @@ One liner:
 ## Manjaro
 
 Install on new system using `install-manjaro.sh`
+
 The script is based on a system installed with Manjaro Architect that uses i3, LightDM and ZSH
 
 One liner:
