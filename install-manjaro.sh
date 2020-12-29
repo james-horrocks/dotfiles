@@ -15,13 +15,14 @@ sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/
 mkdir ~/.oh-my-zsh/functions
 #sudo chsh -s $(which zsh)
 
-# Install Polybar and slick-greeter for LightDM
+# Install Polybar, Rofi and slick-greeter for LightDM
 sudo pacman -Syu --noconfirm \
     slick-greeter \
     polybar \
-    fonts-font-awesome \
-    fonts-materialdesignicons-webfont \
-    fonts-source-code-pro-ttf
+    rofi \
+    ttf-font-awesome \
+    adobe-source-code-pro-fonts
+sudo pamac build ttf-material-design-icons-webfont
 
 # Build and install Alacritty
 git clone https://github.com/alacritty/alacritty.git
