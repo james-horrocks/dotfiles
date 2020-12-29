@@ -58,4 +58,4 @@ Visit https://github.com/khanhas/spicetify-cli/wiki/Basic-Usage for usage instru
 sudo pacman -Syu --noconfirm chezmoi && chezmoi init --apply https://github.com/james-horrocks/dotfiles
 
 # Set background directory
-nitrogen ~/Pictures/backgrounds
+nitrogen ~/Pictures/backgrounds &
