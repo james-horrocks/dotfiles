@@ -105,6 +105,7 @@ inactive-opacity-override = false;
 opacity-rule = [
     "100:class_g = 'plexmediaplayer'", 
     "100:class_g = 'Google-chrome' && WM_WINDOW_ROLE@:s = 'pop-up'",
+    "100:class_g = 'Brave-browser' && WM_WINDOW_ROLE@:s = 'pop-up'",
     "100:fullscreen"
     #"100:_NET_WM_STATE@:32a *= '_NET_WM_STATE_FULLSCREEN'"
 ];
