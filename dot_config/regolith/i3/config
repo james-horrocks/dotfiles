@@ -637,8 +637,8 @@ set_from_resource $i3-wm.bar.status_command i3-wm.bar.status_command i3xrocks -u
 set_from_resource $i3-wm.program.compositor i3-wm.program.compositor /usr/share/regolith-compositor/init
 exec_always --no-startup-id $i3-wm.program.compositor
 
-# Start Rofication for notifications
-set_from_resource $i3-wm.program.notifications i3-wm.program.notifications /usr/bin/rofication-daemon
+# Start Dunst for notifications
+set_from_resource $i3-wm.program.notifications i3-wm.program.notifications /usr/local/bin/dunst
 exec --no-startup-id $i3-wm.program.notifications
 
 # Launch first time user experience script
@@ -665,6 +665,6 @@ exec --no-startup-id $i3-wm.program.3
 
 # Launch Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-# Restore background
+# Restore background if running Manjaro
 exec_always --no-startup-id grep -wq ID=manjaro /etc/os-release && nitrogen --restore &
 #exec --no-startup-id glava --desktop
