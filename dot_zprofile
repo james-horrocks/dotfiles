@@ -19,3 +19,7 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+if [ -d "/usr/share/code/bin" ] ; then
+    PATH="/usr/share/code/bin:$PATH"
+fi

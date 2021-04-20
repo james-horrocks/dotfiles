@@ -93,11 +93,12 @@ plugins=(
 	python
 	pip
 	virtualenv
-	pyenv
 	aws
 	docker
 	docker-compose
 	terraform
+	rsync
+	systemd
 )
 autoload -U compinit && compinit
 
@@ -109,6 +110,11 @@ source $ZSH/oh-my-zsh.sh
 export AWS_SDK_LOAD_CONFIG=1
 export SPICETIFY_INSTALL="$HOME/spicetify-cli"
 export PATH="$SPICETIFY_INSTALL:$PATH"
+
+export DBT_DEV_USERNAME=james.horrocks
+export DBT_DEV_PASSWORD=At8kuREnbIMhVxyaADSFvQxSqZRKPB
+export DBT_DEV_SCHEMA=dev_james_horrocks
+export DBT_TEST_SEEDS=true
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
