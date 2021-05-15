@@ -99,6 +99,7 @@ plugins=(
 	terraform
 	rsync
 	systemd
+	op
 )
 autoload -U compinit && compinit
 
