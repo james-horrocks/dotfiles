@@ -15,3 +15,5 @@ alias data-qa="aws-vault exec qa -- "
 alias data-prod="aws-vault exec prod -- "
 alias data-dev="aws-vault exec dev -- "
 alias zeppelin=/home/james/.local/share/zeppelin-0.8.1/bin/zeppelin-daemon.sh
+alias dircolors=gdircolors
+alias ls=gls

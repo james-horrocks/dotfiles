@@ -19,7 +19,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
 ## set colors for LS_COLORS
-eval `dircolors ~/.dircolors`
+eval $(gdircolors ~/.dircolors)
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -82,24 +82,24 @@ ZSH_DISABLE_COMPFIX=true
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	zsh_reload
-	ubuntu
 	common-aliases
 	zsh-completions
 	zsh-autosuggestions
 	zsh-z
+	aliases
+	alias-finder
 	sudo
 	git
 	python
+	pyenv
 	pip
 	virtualenv
-	aws
 	docker
 	docker-compose
 	terraform
 	rsync
-	systemd
 	op
+	brew
 )
 autoload -U compinit && compinit
 
@@ -108,14 +108,10 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export AWS_SDK_LOAD_CONFIG=1
 export SPICETIFY_INSTALL="$HOME/spicetify-cli"
 export PATH="$SPICETIFY_INSTALL:$PATH"
-
-export DBT_DEV_USERNAME=james.horrocks
-export DBT_DEV_PASSWORD=At8kuREnbIMhVxyaADSFvQxSqZRKPB
-export DBT_DEV_SCHEMA=dev_james_horrocks
-export DBT_TEST_SEEDS=true
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="/Users/james.horrocks/.local/bin:$PATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -144,3 +140,9 @@ fi
 
 # Added for Alacritty
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/james.horrocks/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/james.horrocks/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/james.horrocks/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/james.horrocks/google-cloud-sdk/completion.zsh.inc'; fi
