@@ -82,7 +82,6 @@ ZSH_DISABLE_COMPFIX=true
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	zsh_reload
 	ubuntu
 	common-aliases
 	zsh-completions
@@ -111,11 +110,6 @@ source $ZSH/oh-my-zsh.sh
 export AWS_SDK_LOAD_CONFIG=1
 export SPICETIFY_INSTALL="$HOME/spicetify-cli"
 export PATH="$SPICETIFY_INSTALL:$PATH"
-
-export DBT_DEV_USERNAME=james.horrocks
-export DBT_DEV_PASSWORD=At8kuREnbIMhVxyaADSFvQxSqZRKPB
-export DBT_DEV_SCHEMA=dev_james_horrocks
-export DBT_TEST_SEEDS=true
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
